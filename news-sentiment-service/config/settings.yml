@@ -1,0 +1,15 @@
+# Настройки весов, лимитов, τ (полураспада) и прокси
+weights:
+  sentiment: 0.6
+  volume: 0.3
+  trust: 0.1
+limits:
+  twitter_rate_per_minute: 100
+  reddit_rate_per_minute: 60
+  telegram_rate_per_minute: 50
+  rss_fetch_interval_seconds: 300
+tau_seconds: 3600
+proxy:
+  enabled: false
+  http: "http://127.0.0.1:8080"
+  https: "http://127.0.0.1:8080"

@@ -1,0 +1,10 @@
+aiohttp>=3.9.0
+aiormq>=4.0.0
+aio-pika>=11.0.0
+PyYAML>=6.0
+SQLAlchemy>=2.0
+alembic>=1.11
+python-dotenv>=1.0
+telethon>=1.30.0
+pytest>=8.0
+pytest-asyncio>=0.22
