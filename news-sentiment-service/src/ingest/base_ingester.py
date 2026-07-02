@@ -1,6 +1,6 @@
 import asyncio
 from abc import ABC, abstractmethod
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any, Dict, Optional
 
 
@@ -18,6 +18,6 @@ class BaseIngester(ABC):
         return False
 
     async def run(self) -> Any:
-        self.last_run = datetime.utcnow()
+        self.last_run = datetime.now(timezone.utc)
         await asyncio.sleep(0)
         return await self.fetch()
